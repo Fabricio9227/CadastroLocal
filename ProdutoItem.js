@@ -3,7 +3,7 @@ import {Text, View, TouchableOpacity} from 'react-native';
 import { styles } from './Dados/CommonStyles';
 export default function ProdutoItem(props){
     return (
-    <View style={styles.container} id={props.produto.codigo}>
+    <View style={styles.container} key={props.produto.codigo}>
         <Text style={styles.textItem}>
         {props.produto.codigo} - {props.produto.nome}</Text>
         <Text style={styles.textItem}>
